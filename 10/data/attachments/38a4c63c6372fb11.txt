@@ -1,0 +1,13 @@
+INFO     http.client:base_api.py:18 Making POST request to URL: http://localhost:4001/users/signup
+INFO     http.client:base_api.py:24 Request JSON Body:
+{
+    "username": "",
+    "password": "4_X4Vq7N)B",
+    "email": "invalid_email",
+    "firstName": "Julia",
+    "lastName": "Pineda",
+    "roles": [
+        "ROLE_ADMIN",
+        "ROLE_CLIENT"
+    ]
+}
