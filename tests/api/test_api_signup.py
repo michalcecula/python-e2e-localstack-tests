@@ -1,7 +1,7 @@
 import pytest
+import requests
 from api.post_sign_up import SignUp
 from generators.user_generator import get_random_user
-import requests
 
 @pytest.fixture
 def sign_up_api():
@@ -72,3 +72,4 @@ def test_should_return_500_if_internal_server_error(sign_up_api: SignUp):
         assert response_json["error"] == "Internal Server Error", "Expected error 'Internal Server Error'"
         assert response_json["message"] == "Something went wrong", "Expected message 'Something went wrong'"
         assert response_json["path"] == "/users/signup", "Expected path '/users/signup'"
+        
